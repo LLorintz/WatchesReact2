@@ -1,15 +1,19 @@
 import 'boxicons/css/boxicons.min.css';
 import { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import './header.css'
 
 const Header = () => {
 
   const [theme, setTheme] = useState(false)
   const [toggle, setToggle] = useState(false)
+  const [cartVisible, setCartVisible] = useState(false);
 
   const handleSetToggle = (B:boolean)=>{
     setToggle(B)
  }
+
+
 
   useEffect(() => {
     if(theme)
@@ -19,6 +23,7 @@ const Header = () => {
   }, [theme]);
 
   return (
+    <>
     <header className="header" id="header">
     <nav >
         <a href="#" className="nav__logo">
@@ -40,7 +45,7 @@ const Header = () => {
         </div>
         <div className="nav__btns">           
             <i onClick={()=>setTheme(!theme)} className='bx bx-moon change-theme' id="theme-button"></i>
-            <div className="nav__shop" id="cart-shop">
+            <div className="nav__shop" id="cart-shop"  onClick={() => setCartVisible(true)}>
                 <i className='bx bx-shopping-bag'></i>
             </div>
             <div onClick={()=>handleSetToggle(true)} className="nav__toggle" id="nav-toggle">
@@ -49,6 +54,9 @@ const Header = () => {
         </div>
     </nav>
 </header>
+
+ {cartVisible && <Cart isClosed={cartVisible} onClose={() => setCartVisible(false)} />}
+ </>
   )
 }
 
