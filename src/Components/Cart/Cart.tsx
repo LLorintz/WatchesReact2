@@ -2,7 +2,7 @@ import 'boxicons/css/boxicons.min.css';
 
 
 type cartProps = {
-    onClose: () => void;
+    onClose: (b:boolean) => void;
     isClosed:boolean;
 }
 
@@ -10,7 +10,7 @@ const Cart = (props: cartProps) => {
   
     return (
     <div className={`cart ${props.isClosed?"show-cart":""}`} id="cart">
-    <i className='bx bx-x cart__close' id="cart-close"  onClick={props.onClose}></i>
+    <i className='bx bx-x cart__close' id="cart-close"  onClick={()=>props.onClose(false)}></i>
 
     <h2 className="cart__title-center">My Cart</h2>
 

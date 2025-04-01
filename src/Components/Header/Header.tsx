@@ -55,7 +55,7 @@ const Header = () => {
     </nav>
 </header>
 
- {cartVisible && <Cart isClosed={cartVisible} onClose={() => setCartVisible(false)} />}
+ {cartVisible && <Cart isClosed={cartVisible} onClose={setCartVisible} />}
  </>
   )
 }
