@@ -1,5 +1,5 @@
 import 'boxicons/css/boxicons.min.css';
-
+import './cart.css'
 
 type cartProps = {
     onClose: (b:boolean) => void;
@@ -17,7 +17,7 @@ const Cart = (props: cartProps) => {
     <div className="cart__container">
         <article className="cart__card">
             <div className="cart__box">
-                <img src="assets/img/featured1.png" alt="" className="cart__img"/>
+                <img src="/img/featured1.png" alt="" className="cart__img"/>
             </div>
 
             <div className="cart__details">
@@ -44,7 +44,7 @@ const Cart = (props: cartProps) => {
         
         <article className="cart__card">
             <div className="cart__box">
-                <img src="assets/img/featured3.png" alt="" className="cart__img"/>
+                <img src="/img/featured3.png" alt="" className="cart__img"/>
             </div>
 
             <div className="cart__details">
@@ -71,7 +71,7 @@ const Cart = (props: cartProps) => {
 
         <article className="cart__card">
             <div className="cart__box">
-                <img src="assets/img/new1.png" alt="" className="cart__img"/>
+                <img src="/img/new1.png" alt="" className="cart__img"/>
             </div>
 
             <div className="cart__details">
