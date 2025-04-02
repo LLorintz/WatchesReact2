@@ -1,7 +1,7 @@
 import Header from './Components/Header/Header'
-
 import './App.css'
 import Home from './Components/Home/Home'
+import Featured from './Components/Featured/Featured'
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
       <Header></Header>
        <main className='main'>
           <Home></Home>
+          <Featured></Featured>
        </main>
     </>
   )
