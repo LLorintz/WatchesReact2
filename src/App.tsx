@@ -5,6 +5,7 @@ import Featured from './Components/Featured/Featured'
 import Story from './Components/Story/Story'
 import Footer from './Components/Footer/Footer'
 import NewSletter from './Components/NewsLetter/NewSletter'
+import Products from './Components/Products/Products'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Home></Home>
           <Featured></Featured>
           <Story></Story>
+          <Products></Products>
           <NewSletter></NewSletter>
        </main>
           <Footer></Footer>
