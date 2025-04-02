@@ -20,10 +20,7 @@ useEffect(()=>{
 
   return (
     <section className="featured" id="featured">
-    <h2 className="feature__title">
-        Featured
-    </h2>
-
+    <h2 className="feature__title">Featured</h2>
     <div className="featured__container">
         {
             watches.map(item=>(
