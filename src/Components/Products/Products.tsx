@@ -19,7 +19,7 @@ const Products = () => {
     },[])
 
   return (
-    <section className="products section container" id="products">
+    <section className="products container" id="products">
     <h2 className="section__title">
         Products
     </h2>

@@ -234,10 +234,7 @@ body.dark-theme {
 
 
 /*=============== PRODUCTS ===============*/
-.products__container {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
+
 
 
 
@@ -563,10 +560,7 @@ body.dark-theme {
     height: 180px;
   }
 
-  .products__container {
-    grid-template-columns: repeat(1, 180px);
-    justify-content: center;
-  }
+
 }
 
 /* For medium devices */
@@ -603,19 +597,7 @@ body.dark-theme {
   }
 
 
-  .products__container {
-    grid-template-columns: repeat(3, 200px);
-    justify-content: center;
-    gap: 2.5rem;
-  }
 
-  .products__card {
-    padding: 2rem 0;
-  }
-
-  .products__img {
-    height: 155px;
-  }
 
   .newsletter__bg {
     text-align: initial;
