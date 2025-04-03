@@ -6,6 +6,8 @@ import Story from './Components/Story/Story'
 import Footer from './Components/Footer/Footer'
 import NewSletter from './Components/NewsLetter/NewSletter'
 import Products from './Components/Products/Products'
+import Testimonial from './Components/Testimonial/Testimonial'
+import New from './Components/New/New'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
           <Story></Story>
           <Products></Products>
           <NewSletter></NewSletter>
+          <Testimonial></Testimonial>
+          <New></New>
        </main>
           <Footer></Footer>
     </>
